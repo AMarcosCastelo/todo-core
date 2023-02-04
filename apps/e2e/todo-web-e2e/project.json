@@ -3,6 +3,7 @@
   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
   "sourceRoot": "apps/e2e/todo-web-e2e/src",
+  "tags": ["app:todo-web-e2e", "type:app", "target:web"],
   "targets": {
     "e2e": {
       "executor": "@nxkit/playwright:test",
@@ -39,14 +40,7 @@
         "reportPath": "dist/apps/e2e/todo-web-e2e/playwright-report"
       }
     },
-    "lint": {
-      "executor": "@nrwl/linter:eslint",
-      "outputs": ["{options.outputFile}"],
-      "options": {
-        "lintFilePatterns": ["apps/e2e/todo-web-e2e/**/*.{js,ts}"]
-      }
-    }
+    "lint": {}
   },
-  "tags": [],
   "implicitDependencies": ["todo-web"]
 }

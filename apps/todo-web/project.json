@@ -3,12 +3,11 @@
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "apps/todo-web/src",
   "projectType": "application",
+  "tags": ["app:todo-web", "type:app", "target:web"],
   "targets": {
     "build": {
       "executor": "@nrwl/vite:build",
-      "outputs": [
-        "{options.outputPath}"
-      ],
+      "outputs": ["{options.outputPath}"],
       "defaultConfiguration": "production",
       "options": {
         "outputPath": "dist/apps/todo-web"
@@ -55,26 +54,8 @@
       }
     },
     "test": {
-      "executor": "@nrwl/vite:test",
-      "outputs": [
-        "coverage/apps/todo-web"
-      ],
-      "options": {
-        "passWithNoTests": true,
-        "reportsDirectory": "../../coverage/apps/todo-web"
-      }
+      "executor": "@nrwl/vite:test"
     },
-    "lint": {
-      "executor": "@nrwl/linter:eslint",
-      "outputs": [
-        "{options.outputFile}"
-      ],
-      "options": {
-        "lintFilePatterns": [
-          "apps/todo-web/**/*.{ts,tsx,js,jsx}"
-        ]
-      }
-    }
-  },
-  "tags": []
+    "lint": {}
+  }
 }

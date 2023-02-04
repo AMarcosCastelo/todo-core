@@ -18,6 +18,12 @@
     "test": {
       "inputs": ["default", "^production"]
     },
+    "@nrwl/vite:test": {
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "passWithNoTests": true
+      }
+    },
     "lint": {
       "inputs": ["default", "{workspaceRoot}/.eslintrc.json"],
       "executor": "@nrwl/linter:eslint",
