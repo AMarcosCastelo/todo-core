@@ -10,6 +10,8 @@ specifiers:
   '@nrwl/react': ^15.6.3
   '@nrwl/vite': 15.6.3
   '@nrwl/workspace': 15.6.3
+  '@nxkit/playwright': ^2.0.1
+  '@playwright/test': ^1.30.0
   '@swc/core': ^1.2.173
   '@testing-library/react': 13.4.0
   '@types/node': 18.11.9
@@ -47,6 +49,7 @@ specifiers:
   vitest: ^0.25.8
 
 dependencies:
+  '@nxkit/playwright': 2.0.1_@playwright+test@1.30.0
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   react-is: 18.2.0
@@ -62,6 +65,7 @@ devDependencies:
   '@nrwl/react': 15.6.3_opy2kumf4w5b6vfj3m6726uply
   '@nrwl/vite': 15.6.3_uscdh7kvrhrjjkzwesclwyz4a4
   '@nrwl/workspace': 15.6.3_e235kxtmtvdmwehg7kn3xdudly
+  '@playwright/test': 1.30.0
   '@swc/core': 1.3.32
   '@testing-library/react': 13.4.0_biqbaboplfbrettd7655fr4n2y
   '@types/node': 18.11.9
@@ -2604,6 +2608,17 @@ packages:
       - typescript
     dev: true
 
+  /@nxkit/playwright/2.0.1_@playwright+test@1.30.0:
+    resolution:
+      {
+        integrity: sha512-Za9dilLqiKwrnSHY9qo9a8GFUeAXtzoswf+WM/O3qwdLgXL9PCWaLkYb5ozui3uve5GgaRlVLiWcAGsx7WNPzw==,
+      }
+    peerDependencies:
+      '@playwright/test': ^1.25.2
+    dependencies:
+      '@playwright/test': 1.30.0
+    dev: false
+
   /@parcel/watcher/2.0.4:
     resolution:
       {
@@ -2627,6 +2642,17 @@ packages:
       esquery: 1.4.0
       typescript: 4.8.4
     dev: true
+
+  /@playwright/test/1.30.0:
+    resolution:
+      {
+        integrity: sha512-SVxkQw1xvn/Wk/EvBnqWIq6NLo1AppwbYOjNLmyU0R1RoQ3rLEBtmjTnElcnz8VEtn11fptj1ECxK0tgURhajw==,
+      }
+    engines: { node: '>=14' }
+    hasBin: true
+    dependencies:
+      '@types/node': 18.11.9
+      playwright-core: 1.30.0
 
   /@polka/url/1.0.0-next.21:
     resolution:
@@ -2948,7 +2974,6 @@ packages:
       {
         integrity: sha512-CRpX21/kGdzjOpFsZSkcrXMGIBWMGNIHXXBVFSH+ggkftxg+XYP20TESbh+zFvFj3EQOl5byk0HTRn1IL6hbqg==,
       }
-    dev: true
 
   /@types/normalize-package-data/2.4.1:
     resolution:
@@ -7495,6 +7520,14 @@ packages:
     engines: { node: '>=0.10' }
     hasBin: true
     dev: true
+
+  /playwright-core/1.30.0:
+    resolution:
+      {
+        integrity: sha512-7AnRmTCf+GVYhHbLJsGUtskWTE33SwMZkybJ0v6rqR1boxq2x36U7p1vDRV7HO2IwTZgmycracLxPEJI49wu4g==,
+      }
+    engines: { node: '>=14' }
+    hasBin: true
 
   /postcss-value-parser/4.2.0:
     resolution:

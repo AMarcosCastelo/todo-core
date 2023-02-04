@@ -21,6 +21,7 @@
     "@nrwl/react": "^15.6.3",
     "@nrwl/vite": "15.6.3",
     "@nrwl/workspace": "15.6.3",
+    "@playwright/test": "^1.30.0",
     "@swc/core": "^1.2.173",
     "@testing-library/react": "13.4.0",
     "@types/node": "18.11.9",
@@ -54,6 +55,7 @@
     "vitest": "^0.25.8"
   },
   "dependencies": {
+    "@nxkit/playwright": "^2.0.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-is": "18.2.0",
