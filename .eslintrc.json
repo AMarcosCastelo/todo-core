@@ -1,7 +1,12 @@
 {
   "root": true,
   "ignorePatterns": ["**/*"],
-  "plugins": ["@nrwl/nx"],
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@nrwl/nx", "@typescript-eslint", "simple-import-sort"],
+  "rules": {
+    "simple-import-sort/imports": "error",
+    "simple-import-sort/exports": "error"
+  },
   "overrides": [
     {
       "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
@@ -16,6 +21,20 @@
                 "sourceTag": "*",
                 "onlyDependOnLibsWithTags": ["*"]
               }
+            ]
+          }
+        ],
+        "simple-import-sort/imports": [
+          "error",
+          {
+            "groups": [
+              // React comes first, followed by third-party dependencies
+              ["^react", "^@?\\w"],
+              // Side effect imports (ex: import "../some-module")
+              ["^\\u0000"],
+              // Aliased imports (ex: import { Type } from "~/types")
+              ["^~/"]
+              // Relative imports come last
             ]
           }
         ]
