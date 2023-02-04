@@ -31,6 +31,12 @@
       "options": {
         "lintFilePatterns": ["{projectRoot}/**/*.{ts,tsx,js,jsx}"]
       }
+    },
+    "type-check": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "pnpm tsc -p {projectRoot}/tsconfig.lint.json --noEmit"
+      }
     }
   },
   "namedInputs": {

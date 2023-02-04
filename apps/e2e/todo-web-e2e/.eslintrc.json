@@ -8,6 +8,9 @@
     },
     {
       "files": ["*.ts", "*.tsx"],
+      "parserOptions": {
+        "project": "apps/e2e/todo-web-e2e/tsconfig.lint.json"
+      },
       "rules": {}
     },
     {

@@ -40,7 +40,8 @@
         "reportPath": "dist/apps/e2e/todo-web-e2e/playwright-report"
       }
     },
-    "lint": {}
+    "lint": {},
+    "type-check": {}
   },
   "implicitDependencies": ["todo-web"]
 }

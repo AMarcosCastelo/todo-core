@@ -3,6 +3,10 @@
   "ignorePatterns": ["**/*"],
   "parser": "@typescript-eslint/parser",
   "plugins": ["@nrwl/nx", "@typescript-eslint", "simple-import-sort"],
+  "extends": [
+    "plugin:@typescript-eslint/recommended",
+    "standard-with-typescript"
+  ],
   "rules": {
     "simple-import-sort/imports": "error",
     "simple-import-sort/exports": "error"
