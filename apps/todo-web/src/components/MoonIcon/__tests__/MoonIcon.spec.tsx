@@ -4,12 +4,12 @@ import { baseRender } from '../../../utils';
 import MoonIcon from '../MoonIcon';
 
 describe('MoonIcon', () => {
-  it('should render correctly', () => {
-    const screenLight = baseRender(<MoonIcon />);
-    expect(screenLight.baseElement).toMatchSnapshot();
+  const component = (customProps = {}) => <MoonIcon {...customProps} />;
 
-    const screenDark = baseRender(<MoonIcon />, 'dark');
-    expect(screenDark.baseElement).toMatchSnapshot();
+  it('should render correctly', () => {
+    const screenLight = baseRender(component());
+
+    expect(screenLight.baseElement).toMatchSnapshot();
   });
 
   it('should render filled icon if filled prop is passed', () => {

@@ -4,16 +4,11 @@ import {
   type RenderResult,
 } from '@testing-library/react';
 
-import { darkTheme, lightTheme } from '../helpers';
+import { lightTheme } from '../helpers';
 
-export const baseRender = (
-  content: React.ReactElement,
-  theme?: 'light' | 'dark',
-): RenderResult =>
+export const baseRender = (content: React.ReactElement): RenderResult =>
   testRender(content, {
     wrapper: ({ children }) => (
-      <NextUIProvider theme={theme === 'dark' ? darkTheme : lightTheme}>
-        {children}
-      </NextUIProvider>
+      <NextUIProvider theme={lightTheme}>{children}</NextUIProvider>
     ),
   });

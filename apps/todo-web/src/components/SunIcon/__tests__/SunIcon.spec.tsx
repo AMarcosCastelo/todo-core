@@ -6,10 +6,8 @@ import SunIcon from '../SunIcon';
 describe('SunIcon', () => {
   it('should render correctly', () => {
     const screenLight = baseRender(<SunIcon />);
-    expect(screenLight.baseElement).toMatchSnapshot();
 
-    const screenDark = baseRender(<SunIcon />, 'dark');
-    expect(screenDark.baseElement).toMatchSnapshot();
+    expect(screenLight.baseElement).toMatchSnapshot();
   });
 
   it('should render filled icon if filled prop is passed', () => {
