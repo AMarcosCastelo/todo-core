@@ -13,7 +13,7 @@ describe('SunIcon', () => {
   it('should render filled icon if filled prop is passed', () => {
     const screen = baseRender(<SunIcon filled />);
 
-    expect(screen.getByTestId('filled-icon')).toBeInTheDocument();
+    expect(screen.getByTestId('sun-filled-icon')).toBeInTheDocument();
     expect(screen.baseElement).toMatchSnapshot();
   });
 });

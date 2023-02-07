@@ -19,7 +19,7 @@ const SunIcon = ({
         width={size ?? width ?? 24}
         height={size ?? height ?? 24}
         viewBox="0 0 24 24"
-        data-testid="filled-icon"
+        data-testid="sun-filled-icon"
       >
         <g fill={fill}>
           <path d="M19 12a7 7 0 11-7-7 7 7 0 017 7z" />

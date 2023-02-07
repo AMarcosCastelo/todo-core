@@ -49,7 +49,7 @@ exports[`SunIcon > should render filled icon if filled prop is passed 1`] = `
       data-overlay-container="true"
     >
       <svg
-        data-testid="filled-icon"
+        data-testid="sun-filled-icon"
         height="24"
         viewBox="0 0 24 24"
         width="24"
