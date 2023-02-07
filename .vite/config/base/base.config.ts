@@ -19,7 +19,7 @@ export const getViteBaseConfig = (dirname: string): VitestConfigExport => {
         skipDiagnostics: true,
       }),
       viteTsConfigPaths({
-        root: '../../../',
+        root: process.cwd(),
       }),
     ],
 
@@ -27,11 +27,11 @@ export const getViteBaseConfig = (dirname: string): VitestConfigExport => {
       globals: true,
       reporters: ['default', 'json', 'html'],
       cache: {
-        dir: '../../../../node_modules/.vitest',
+        dir: `${process.cwd()}/node_modules/.vitest`,
       },
       coverage: {
         reporter: ['text', 'json', 'html', 'lcov'],
-        reportsDirectory: `../../../../coverage/${relativePath}`,
+        reportsDirectory: `${process.cwd()}/coverage/${relativePath}`,
         '100': true,
       },
       environment: 'node',
