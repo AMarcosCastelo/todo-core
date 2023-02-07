@@ -1,4 +1,4 @@
-import { changeTheme, Navbar, Switch, Text, useTheme } from '@nextui-org/react';
+import { Navbar, Text } from '@nextui-org/react';
 
 import ThemeSwitch from '../ThemeSwitch/ThemeSwitch';
 
