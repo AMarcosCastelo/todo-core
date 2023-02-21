@@ -8,13 +8,11 @@ interface Props {
 
 const PageWrapper: React.FC<React.PropsWithChildren<Props>> = ({
   children,
-}) => {
-  return (
-    <>
-      <Header />
-      {children}
-    </>
-  );
-};
+}) => (
+  <>
+    <Header />
+    {children}
+  </>
+);
 
 export default memo(PageWrapper);

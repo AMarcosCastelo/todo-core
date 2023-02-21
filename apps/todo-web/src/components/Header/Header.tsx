@@ -4,14 +4,8 @@ export default function Header() {
   return (
     <Navbar>
       <Navbar.Brand>
-        <Text>TODO</Text>
+        <Text>My Todo-s</Text>
       </Navbar.Brand>
-
-      <Navbar.Content>
-        <Navbar.Link color="inherit" href="#">
-          Login
-        </Navbar.Link>
-      </Navbar.Content>
     </Navbar>
   );
 }
