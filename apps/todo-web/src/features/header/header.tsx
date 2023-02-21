@@ -1,18 +1,16 @@
 import { Navbar, Spacer, Text } from '@nextui-org/react';
 import { ListChecks } from 'lucide-react';
 
-export default function Header() {
-  return (
-    <Navbar isBordered>
-      <Navbar.Brand>
-        <ListChecks size="40" />
+export const Header = () => (
+  <Navbar isBordered>
+    <Navbar.Brand>
+      <ListChecks size="40" />
 
-        <Spacer />
+      <Spacer />
 
-        <Text color="inherit" size="$lg">
-          My Todo-s
-        </Text>
-      </Navbar.Brand>
-    </Navbar>
-  );
-}
+      <Text color="inherit" size="$lg">
+        My Todo-s
+      </Text>
+    </Navbar.Brand>
+  </Navbar>
+);

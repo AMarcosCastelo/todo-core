@@ -1,7 +1,7 @@
 import { memo } from 'react';
 import { Container, NextUIProvider, Spacer } from '@nextui-org/react';
 
-import Header from './features/header';
+import { Header } from './features/header';
 import { TodoForm } from './features/todos';
 import { darkTheme } from './utils';
 
