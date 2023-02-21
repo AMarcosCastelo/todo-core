@@ -1,7 +1,5 @@
 import { Navbar, Text } from '@nextui-org/react';
 
-import ThemeSwitch from '../ThemeSwitch/ThemeSwitch';
-
 export default function Header() {
   return (
     <Navbar>
@@ -13,8 +11,6 @@ export default function Header() {
         <Navbar.Link color="inherit" href="#">
           Login
         </Navbar.Link>
-
-        <ThemeSwitch />
       </Navbar.Content>
     </Navbar>
   );
