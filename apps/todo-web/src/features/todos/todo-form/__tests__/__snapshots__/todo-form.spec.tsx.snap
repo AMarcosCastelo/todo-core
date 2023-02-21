@@ -1,0 +1,110 @@
+// Vitest Snapshot v1
+
+exports[`Todo form > should render correctly 1`] = `
+<div>
+  <div
+    data-overlay-container="true"
+  >
+    <div
+      class="nextui-c-dfbgCO nextui-c-dfbgCO-fGHEql-fluid-true nextui-c-dfbgCO-ijakZJF-css"
+    >
+      <div
+        class="nextui-c-iwmZdB nextui-c-iwmZdB-jTfqsF-helperColor-default nextui-c-iwmZdB-dpkacN-borderWeight-normal nextui-c-iwmZdB-gNajeV-size-xl nextui-c-iwmZdB-iignQAc-css nextui-input-main-container nextui-input-main-container--normal"
+        data-state="normal"
+      >
+        <div
+          class="nextui-c-boZsAS nextui-c-boZsAS-fjttfO-isTextarea-false nextui-c-boZsAS-eWhiMK-animated-false nextui-input-container nextui-input-container--normal nextui-input-container--input"
+        >
+          <label
+            class="nextui-c-eXOOPO nextui-c-eXOOPO-dOamyD-bordered-true nextui-c-eXOOPO-iNKybL-shadow-true nextui-c-eXOOPO-ccrOPm-underlined-false nextui-c-eXOOPO-bxoewP-animated-false nextui-c-eXOOPO-lkBNdM-isTextarea-false nextui-c-eXOOPO-eNajNl-cv nextui-input-wrapper nextui-input-wrapper--normal nextui-input-wrapper--bordered nextui-input-wrapper--shadow"
+          >
+            <span
+              class="nextui-c-PJLV nextui-c-iFHsrU nextui-input-placeholder"
+            >
+              Create a new Todo
+            </span>
+            <input
+              aria-multiline="false"
+              aria-placeholder="Create a new Todo"
+              aria-readonly="false"
+              aria-required="false"
+              autocomplete="off"
+              class="nextui-c-jeuecp nextui-c-jeuecp-bXqash-bordered-true nextui-input"
+              data-state="normal"
+              id="react-aria-1"
+              placeholder="Create a new Todo"
+              type="text"
+              value=""
+            />
+            <button
+              aria-label="clear"
+              class="nextui-c-ctQnhE nextui-c-ctQnhE-eWhiMK-animated-false nextui-input-clear-button"
+              lang="en"
+              type="button"
+            >
+              <span
+                class="nextui-c-gDSmsE nextui-c-gulvcB"
+              >
+                <svg
+                  class=""
+                  height="24"
+                  viewBox="0 0 24 24"
+                  width="24"
+                >
+                  <path
+                    d="M12 2a10 10 0 1010 10A10.016 10.016 0 0012 2zm3.36 12.3a.754.754 0 010 1.06.748.748 0 01-1.06 0l-2.3-2.3-2.3 2.3a.748.748 0 01-1.06 0 .754.754 0 010-1.06l2.3-2.3-2.3-2.3A.75.75 0 019.7 8.64l2.3 2.3 2.3-2.3a.75.75 0 011.06 1.06l-2.3 2.3z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </span>
+            </button>
+          </label>
+        </div>
+        <div
+          class="nextui-c-gJvMas nextui-input-helper-text-container"
+        />
+      </div>
+      <button
+        class="nextui-c-iWjDFM nextui-c-gulvcB nextui-c-iWjDFM-iaomLu-bordered-true nextui-c-iWjDFM-hkKLfu-color-default nextui-c-iWjDFM-fbAdQA-size-lg nextui-c-iWjDFM-cwXrJp-borderWeight-normal nextui-c-iWjDFM-exaRme-auto-true nextui-c-iWjDFM-eTPbci-cv nextui-c-iWjDFM-hKBzkL-cv nextui-c-iWjDFM-iPJLV-css nextui-button nextui-button--ready"
+        data-state="ready"
+        type="button"
+      >
+        <span
+          class="nextui-c-bDGMeb nextui-c-bDGMeb-jzMUFa-isAuto-true nextui-c-bDGMeb-hjqCeZ-cv nextui-button-icon"
+        >
+          <svg
+            class="lucide lucide-plus"
+            fill="none"
+            height="24"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <line
+              x1="12"
+              x2="12"
+              y1="5"
+              y2="19"
+            />
+            <line
+              x1="5"
+              x2="19"
+              y1="12"
+              y2="12"
+            />
+          </svg>
+        </span>
+        <div
+          class="nextui-button-text nextui-button-text-left"
+        >
+          ADD
+        </div>
+      </button>
+    </div>
+  </div>
+</div>
+`;

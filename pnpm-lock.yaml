@@ -41,6 +41,7 @@ specifiers:
   husky: 8.0.3
   jsdom: 20.0.3
   lint-staged: 13.1.0
+  lucide-react: ^0.115.0
   nx: 15.6.3
   prettier: 2.6.2
   react: 18.2.0
@@ -60,6 +61,7 @@ specifiers:
 dependencies:
   '@nextui-org/react': 1.0.0-beta.12_biqbaboplfbrettd7655fr4n2y
   '@nxkit/playwright': 2.0.1_@playwright+test@1.30.0
+  lucide-react: 0.115.0_react@18.2.0
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   react-is: 18.2.0
@@ -8815,6 +8817,17 @@ packages:
     dependencies:
       yallist: 4.0.0
     dev: true
+
+  /lucide-react/0.115.0_react@18.2.0:
+    resolution:
+      {
+        integrity: sha512-VGL7jBKN6pEXi6peXoyn9t9O7olvinaAonnoe+iFi/F2q7/yQzAFM5KR1OY15u9PlrB3scI9HvcTFoOrIjUaVQ==,
+      }
+    peerDependencies:
+      react: ^16.5.1 || ^17.0.0 || ^18.0.0
+    dependencies:
+      react: 18.2.0
+    dev: false
 
   /lz-string/1.4.4:
     resolution:
