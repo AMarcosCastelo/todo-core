@@ -1,16 +1,15 @@
-import { Check } from 'lucide-react';
+import { vi } from 'vitest';
 
 import { baseRender } from '~/utils/testing';
 
-import IconButton from '../icon-button';
+import TodoCheckButton from '../todo-check-button';
 
-describe('Icon Button', () => {
+describe('TodoCheckButton', () => {
   const defaultProps = {
-    ariaLabel: 'Check Button',
-    icon: <Check data-testid="check-icon" />,
+    handleClick: vi.fn(),
   };
   const component = (customProps = {}) => (
-    <IconButton {...customProps} {...defaultProps} />
+    <TodoCheckButton {...customProps} {...defaultProps} />
   );
 
   it('should render correctly', () => {

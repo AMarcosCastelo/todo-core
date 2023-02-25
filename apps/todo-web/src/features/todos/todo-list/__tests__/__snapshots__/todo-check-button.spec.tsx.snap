@@ -1,0 +1,38 @@
+// Vitest Snapshot v1
+
+exports[`TodoCheckButton > should render correctly 1`] = `
+<div>
+  <div
+    data-overlay-container="true"
+  >
+    <div
+      class="nextui-c-ftJsHY nextui-tooltip-button"
+      role="button"
+      tabindex="-1"
+    >
+      <button
+        aria-label="Check button"
+        class="nextui-c-eWzLKI"
+      >
+        <svg
+          class="lucide lucide-check"
+          data-testid="check-icon"
+          fill="none"
+          height="20"
+          stroke="var(--nextui-colors-blue600)"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <polyline
+            points="20 6 9 17 4 12"
+          />
+        </svg>
+      </button>
+    </div>
+  </div>
+</div>
+`;

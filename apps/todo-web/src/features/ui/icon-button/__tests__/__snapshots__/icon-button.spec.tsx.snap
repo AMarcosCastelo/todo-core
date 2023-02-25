@@ -1,6 +1,6 @@
 // Vitest Snapshot v1
 
-exports[`Todo form > should render correctly 1`] = `
+exports[`Icon Button > should render correctly 1`] = `
 <div>
   <div
     data-overlay-container="true"

@@ -1,16 +1,15 @@
-import { Check } from 'lucide-react';
+import { vi } from 'vitest';
 
 import { baseRender } from '~/utils/testing';
 
-import IconButton from '../icon-button';
+import TodoTrashButton from '../todo-trash-button';
 
-describe('Icon Button', () => {
+describe('TodoTrashButton', () => {
   const defaultProps = {
-    ariaLabel: 'Check Button',
-    icon: <Check data-testid="check-icon" />,
+    handleClick: vi.fn(),
   };
   const component = (customProps = {}) => (
-    <IconButton {...customProps} {...defaultProps} />
+    <TodoTrashButton {...customProps} {...defaultProps} />
   );
 
   it('should render correctly', () => {
@@ -22,6 +21,6 @@ describe('Icon Button', () => {
   it('should render the icon', () => {
     const screen = baseRender(component());
 
-    expect(screen.getByTestId('check-icon')).toBeInTheDocument();
+    expect(screen.getByTestId('trash-icon')).toBeInTheDocument();
   });
 });

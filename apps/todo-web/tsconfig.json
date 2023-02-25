@@ -3,7 +3,11 @@
     "jsx": "react-jsx",
     "types": ["vite/client", "vitest"],
     "esModuleInterop": false,
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["src/*"]
+    }
   },
   "files": [],
   "include": [],

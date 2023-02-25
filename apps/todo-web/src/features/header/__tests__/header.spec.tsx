@@ -1,4 +1,5 @@
-import { baseRender } from '../../../utils/testing';
+import { baseRender } from '~/utils/testing';
+
 import { Header } from '../header';
 
 describe('Todo form', () => {
