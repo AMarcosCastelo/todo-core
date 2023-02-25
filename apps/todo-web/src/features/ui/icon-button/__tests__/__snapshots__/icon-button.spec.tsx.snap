@@ -1,0 +1,32 @@
+// Vitest Snapshot v1
+
+exports[`Todo form > should render correctly 1`] = `
+<div>
+  <div
+    data-overlay-container="true"
+  >
+    <button
+      aria-label="Check Button"
+      class="nextui-c-eWzLKI"
+    >
+      <svg
+        class="lucide lucide-check"
+        data-testid="check-icon"
+        fill="none"
+        height="24"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        width="24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <polyline
+          points="20 6 9 17 4 12"
+        />
+      </svg>
+    </button>
+  </div>
+</div>
+`;
